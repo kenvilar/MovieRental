@@ -1,7 +1,6 @@
 package movierental
 
 class Account {
-
 	String userName;
 	String password;
 	String role;
@@ -10,7 +9,7 @@ class Account {
     static constraints = {
 	
 		fullName(blank:false)
-		userName(blank:false)
+		userName(blank:false, unique:true)
 		password(blank:false)
 		role(blank:false)
     }

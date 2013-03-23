@@ -62,7 +62,6 @@ class MainController {
 				index();
 				break
 		}
-		
 	}
 	
 	def addCustomerInit() {

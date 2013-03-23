@@ -94,7 +94,7 @@
 	<strong>Customer Request:</strong>
 
 	<div>
-		<table width="900">
+		<table width="1000">
 			<tr>
 				<th>Firstname</th>
 				<th>Lastname</th>

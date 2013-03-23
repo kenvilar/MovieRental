@@ -35,6 +35,7 @@
 	
 	<div>
 		<g:form controller="clerk" action="index">
+			<i class="icon-chevron-left icon-white"></i>
 			<input type="submit" class="btn btn-primary btn-small" value="Back">
 		</g:form>
 	</div>
