@@ -132,7 +132,7 @@ class ClerkController {
 		def info = db.rows("select * from customer where id='${id}'")
 		def rentedMovies = db.rows("select * from ((select * from movie) as a join (select movie_id from rented_movie) as b on a.id=b.movie_id)")
 		def getCart = db.rows("select * from cart where customer_id='${id}'")
-		
+		def transactionInfo = db.rows("select * from ((select * from movie) as a join (select * from cart) as b on a.id=b.movie_id)")
 		
 		def dateFormat = now.format('MM/dd/yyyy')
 		
@@ -140,6 +140,7 @@ class ClerkController {
 			db.execute("insert into rented_movie(customer_id,movie_id,due_date) values('${id}','${it.movie_id}','${due}')")
 		}
 		
+		render(transactionInfo)
 		
 		db.execute("delete from cart")
 		render(view:"saveTransaction",model:[currentDate:dateFormat,info:info.get(0),movies:rentedMovies,dueFormat:dueFormat])

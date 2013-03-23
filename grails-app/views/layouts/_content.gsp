@@ -3,7 +3,7 @@
 	<g:if test="${!layout_nomainmenu}">
 	<div class="row">
 		<div class="span12">
-			<g:render template="/_menu/menubar"/>
+			<%--<g:render template="/_menu/menubar"/>--%>
 		</div>
 	</div>
 	</g:if>
@@ -12,7 +12,7 @@
 	<g:if test="${!layout_nosecondarymenu}">
 	<div class="row">
 		<div class="span12">
-			<g:render template="/_menu/submenubar"/>														
+			<%--<g:render template="/_menu/submenubar"/>--%>														
 		</div>
 	</div>
 	</g:if>

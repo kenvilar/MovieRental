@@ -1,7 +1,7 @@
 <footer class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="span2">
+			<%--<div class="span2">
 				<h4>Product</h4>
 				<ul class="unstyled">
 					<li>
@@ -56,7 +56,7 @@
 		at any time without notice. For documents and software available from this server, the operator and author does not warrant or 
 		assume any legal liability or responsibility for the accuracy, completeness, or usefulness of any information,
 		apparatus, product, or process disclosed.
-		</p>
+		</p>--%>
 	
 		<p class="pull-right"><a href="#">Back to top</a></p>
 	</div>
