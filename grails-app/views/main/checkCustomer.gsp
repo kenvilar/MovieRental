@@ -1,6 +1,6 @@
 <html>
 <head>
-	<meta name="layout" content="clerk" />
+	<meta name="layout" content="admin" />
 	<title>Check Customer</title>
 	
 	<style type="text/css">
@@ -20,7 +20,7 @@
 	</div>
 	
 	<div align="center">
-		<table width=700>
+		<table width="400px">
 			<tr>
 				<th><font color="white">First Name</font></th>
 				<th><font color="white">Last Name</font></th>
@@ -31,7 +31,7 @@
 					<td><font color="white"><center>${info.first_name}</center></font></td>
 					<td><font color="white"><center>${info.last_name}</center></font></td>
 					<td>
-						<g:form controller="clerk" action="viewCustomer">
+						<g:form controller="main" action="viewCustomer">
 							<input type="hidden" name="id" value="${info.id}">
 							<input type="submit" class="btn btn-primary btn-small" value="View">
 						</g:form>
@@ -42,10 +42,10 @@
 	</div>
 	
 	<div>
-		<g:form controller="clerk" action="index">
+		<g:form controller="main" action="index">
 			<input type="submit" class="btn btn-primary btn-small" value="Back">
 		</g:form>
-	</div><br/><br/>
+	</div><br/><br/><br/>
 	
 </body>
 </html>
